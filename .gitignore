@@ -1,9 +1,9 @@
 node_modules/
 dist/
-*.tsbuildinfo
-.env
 .venv/
 __pycache__/
-.pytest_cache/
 *.pyc
 *.db
+.env
+*.tsbuildinfo
+.pytest_cache/
