@@ -1,0 +1,6 @@
+.card { color:inherit; display:block; min-width:0; } .visual { position:relative; overflow:hidden; }
+.visual > div { transition:transform .45s ease; } .card:hover .visual > div { transform:scale(1.035); }
+.tag { position:absolute; left:14px; top:14px; padding:7px 9px; background:#111b; color:white; font:10px monospace; }
+.top { display:flex; justify-content:space-between; gap:15px; margin-top:15px; font-size:13px; }
+.top h3 { font-size:13px; margin:0; font-weight:600; } .top span { white-space:nowrap; }
+.card p { font-size:11px; color:#92928b; margin:7px 0 0; }

@@ -1,0 +1,12 @@
+.artwork { position:relative; height:290px; overflow:hidden; display:grid; place-items:center; background:#77736e; isolation:isolate; }
+.halo { position:absolute; width:60%; aspect-ratio:1; border-radius:50%; background:rgba(255,255,255,.2); filter:blur(45px); }
+.garment { position:relative; width:56%; height:70%; background:#262626; clip-path:polygon(22% 0,38% 6%,62% 6%,78% 0,100% 28%,84% 42%,76% 33%,76% 100%,24% 100%,24% 33%,16% 42%,0 28%); filter:drop-shadow(0 10px 8px #0006); transform:rotate(-4deg); border-radius:12px; box-shadow:inset 20px 5px 55px #ffffff19; }
+.stamp { position:absolute; bottom:15px; right:16px; font:10px monospace; color:#fff9; letter-spacing:.2em; }
+.jacket { background:#8a887d; } .jacket .garment { background:linear-gradient(120deg,#292422,#514840 45%,#181715); }
+.denim { background:#b3b7b3; } .denim .garment,.cargo .garment { width:45%; height:82%; clip-path:polygon(14% 0,86% 0,100% 100%,55% 100%,50% 31%,45% 100%,0 100%); background:linear-gradient(95deg,#373f48,#68747b 55%,#343e46); transform:rotate(3deg); }
+.stripe { background:#a7a69e; } .stripe .garment { background:repeating-linear-gradient(0deg,#35322f 0 16px,#b9b4a9 16px 24px); }
+.bomber { background:#a69c89; } .bomber .garment { background:linear-gradient(115deg,#45453a,#858575,#2d322e); }
+.tee { background:#aaa69c; } .tee .garment { background:linear-gradient(160deg,#d2cabc,#77766b); }
+.cargo { background:#9c9f96; } .cargo .garment { background:linear-gradient(95deg,#45463e,#737765,#34382c); }
+.large { height:min(65vh,590px); }
+@media(max-width:650px) { .artwork { height:245px; } .large { height:430px; } }

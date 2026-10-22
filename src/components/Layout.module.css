@@ -1,0 +1,11 @@
+.app { min-height:100vh; display:flex; flex-direction:column; }
+.announcement { background:#c8fd67; text-align:center; color:#111; padding:8px 10px; font-size:10px; letter-spacing:.16em; font-weight:700; }
+.header { display:flex; align-items:center; justify-content:space-between; gap:24px; padding:20px max(4vw,22px); border-bottom:1px solid #2c2c28; }
+.logo { color:#ecece5; font-size:31px; letter-spacing:-.1em; font-weight:900; white-space:nowrap; }
+.logo span { font-size:10px; letter-spacing:0; vertical-align:top; margin-left:6px; }
+.nav { display:flex; gap:32px; } .nav a,.auth { font-size:11px; font-weight:700; letter-spacing:.1em; color:#a6a69e; }
+.nav a:hover,.nav a[aria-current='page'],.auth:hover { color:#c8fd67; }
+.auth { background:none; border:0; cursor:pointer; white-space:nowrap; padding:8px; }
+.footer { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:14px; margin-top:auto; border-top:1px solid #30302e; padding:36px max(4vw,22px); color:#77776f; font-size:11px; letter-spacing:.07em; }
+.footer strong { color:#e8e8df; font-size:18px; letter-spacing:-.05em; }
+@media(max-width:760px) { .header { flex-wrap:wrap; gap:12px; } .nav { order:3; width:100%; justify-content:space-between; gap:8px; } .nav a { font-size:10px; } }
